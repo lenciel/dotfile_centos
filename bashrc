@@ -1,8 +1,5 @@
 ##############################################################################
 #   Filename: .bashrc                                                        #
-# Maintainer: Michael J. Smalley <michaeljsmalley@gmail.com>                 #
-#        URL: http://github.com/michaeljsmalley/dotfiles                     #
-#                                                                            #
 #                                                                            #
 # Sections:                                                                  #
 #   01. General ................. General Bash behavior                      #
