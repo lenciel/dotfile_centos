@@ -1,0 +1,11 @@
+# PATH
+PATH="/usr/localbin:$PATH"
+
+# Add virtualenvwrapper env parameter
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2.7
+export VIRTUALENV_DISTRIBUTE=true
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+
+# pip download cache folder
+export PIP_DOWNLOAD_CACHE=$HOME/.pip-download-cache
