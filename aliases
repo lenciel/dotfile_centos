@@ -1,0 +1,83 @@
+#------------------------------------------------------
+# ALIAS'S OF ALL TYPES SHAPES AND FORMS ;)
+#------------------------------------------------------
+
+# Alias's to local workstations
+alias hist='history | grep $1' #Requires one input
+
+# Alias's to modified commands
+alias ps='ps auxf'
+alias home='cd ~'
+alias pg='ps aux | grep'  #requires an argument
+alias un='tar -zxvf'
+alias mountedinfo='df -hT'
+alias ping='ping -n 10'
+alias openports='netstat -nape --inet'
+alias ns='sudo netstat -alnp --protocol=inet | grep -v CLOSE_WAIT | cut -c-6,21-94 | tail -n +2'
+alias du1='du -h --max-depth=1'
+alias da='date "+%Y-%m-%d %A    %T %Z"'
+alias ebrc='vi ~/.bashrc'
+
+# Alias to multiple ls commands
+alias ls='ls --color'
+alias la='ls -Al'               # show hidden files
+alias lx='ls -lXB'              # sort by extension
+alias lk='ls -lSr'              # sort by size alias lc='ls -lcr'      # sort by change time
+alias lu='ls -lur'      # sort by access time
+alias lr='ls -lR'               # recursive ls
+alias lt='ls -ltr'              # sort by date
+alias lm='ls -al |more'         # pipe through 'more'
+alias lr="ls -R | grep ':$' | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
+
+# Alias chmod commands
+alias mx='chmod a+x'
+alias 000='chmod 000'
+alias 644='chmod 644'
+alias 755='chmod 755'
+
+#Alias for security
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias ln='ln -i'
+
+#Alias for others
+alias HEX="python -c 'print(\"0x%X\n\", ARGV[0])'"
+alias DEC="python -c 'print(\"%d\n\", ARGV[0])'"
+alias BIN="python -c 'print(\"%bb\n\", ARGV[0])'"
+alias WORD="pyton -c 'print(\"0x%04X\n\", ARGV[0])'"
+alias ff='find . -type f -exec chmod 644 {} \;'
+alias fd='find . -type d -exec chmod 755 {} \;'
+alias t='vim -c ":$" ~/.todo'
+alias todo='cat ~/.todo'
+alias cd..='cd ..'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias cgrep='find . -regex ".*/SCCS" -prune -o -name "*.[ch]" -type f -exec grep \!* {} /dev/null \;'
+
+##Directory##
+
+#Common commands
+alias vi=vim
+
+# Alias for Git
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit'
+alias gd='git diff'
+alias go='git checkout '
+alias gk='gitk --all&'
+alias gx='gitx --all'
+alias got='git '
+alias get='git '
+alias gl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+# Helpers
+alias speedtest='wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test500.zip'
+alias grep='grep --color=auto' # Always highlight grep search term
+alias df='df -h'               # Disk free, in gigabytes, not bytes
+alias du='du -h -c'            # Calculate total disk usage for a folder
+alias clr='clear;echo "Currently logged in on $(tty), as $(whoami) in directory $(pwd)."'
+alias svim="sudo vim"            # Run vim as super user
+alias vi="vim"
