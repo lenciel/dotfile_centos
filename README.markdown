@@ -9,7 +9,7 @@ Installation
 ------------
 
 ``` bash
-git clone git://github.com/lenciel/dot_files  ~/dot_files
+git clone git://github.com/lenciel/dotfile_centos  ~/dot_files
 cd ~/dot_files
 ./makesymlinks.sh
 ```
